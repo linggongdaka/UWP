@@ -1,8 +1,9 @@
 {
   "methodology": {
     "score": "binary primary pass per task",
-    "comparison_scope": "same task pack, scoring rules, turn mode, and main-run results",
-    "extra_reruns_included": false,
+    "comparison_scope": "same task pack and scoring rules; Qwen hard uses the three-run success intersection",
+    "extra_reruns_included": true,
+    "qwen_hard_aggregation": "three_run_success_intersection",
     "diagnostic_score_included": false
   },
   "models": [
@@ -22,17 +23,17 @@
     },
     {
       "model": "Qwen3.7 Max",
-      "result_scope": "main_run",
+      "result_scope": "main_run_with_hard_three_run_success_intersection",
       "case_count": 120,
-      "overall_pass_rate": 72.5,
+      "overall_pass_rate": 70.83,
       "by_difficulty": {
         "easy": 100.0,
         "mid": 70.83,
-        "hard": 34.48
+        "hard": 27.59
       },
-      "redline_case_count": 1,
+      "redline_case_count": 2,
       "adapter_error_count": 0,
-      "wall_clock_duration": "23m34s"
+      "wall_clock_duration": "23m34s + 2 次困难题复测"
     },
     {
       "model": "Doubao Seed 2.1 Pro",

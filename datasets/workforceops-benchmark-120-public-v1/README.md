@@ -6,7 +6,7 @@
 
 - `data/workforceops_benchmark_120_public_v1.json`：完整公开版题包。
 - `reports/dataset_analysis_zh.md`：数据分布、难度、权限、红线和业务能力分析。
-- `reports/model_results_zh.md`：四模型同口径主运行结果。
+- `reports/model_results_zh.md`：四模型对比结果；Qwen 困难题采用三次稳定交集口径。
 - `docs/DATASET_CARD.zh-CN.md`：数据集用途、边界与限制。
 - `docs/DATA_DICTIONARY.zh-CN.md`：核心字段说明。
 - `docs/PRIVACY.md`：隐私与脱敏策略。

@@ -13,7 +13,7 @@
   Benchmark 的公开脱敏配套数据包，包含脱敏依赖表、QA grounding、120 case benchmark 包、manifest 和校验制品。
 
 - [WorkforceOps Benchmark 120 校准公开版](./workforceops-benchmark-120-public-v1/)
-  包含 43 道简单题、48 道中等题和 29 道困难题，提供完整公开 JSON 题包、Schema、数据集卡片、隐私说明、分布分析、四模型主运行结果、图表、校验和与独立校验脚本。
+  包含 43 道简单题、48 道中等题和 29 道困难题，提供完整公开 JSON 题包、Schema、数据集卡片、隐私说明、分布分析、四模型对比结果、图表、校验和与独立校验脚本。
 
 ## 范围
 

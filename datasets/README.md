@@ -13,7 +13,7 @@ This directory contains the public dataset releases for UGP.
   The public companion package for the benchmark. It contains redacted dependent tables, QA grounding, the 120-case benchmark pack, a manifest, and validation artifacts.
 
 - [WorkforceOps Benchmark 120 Calibrated Public Release](./workforceops-benchmark-120-public-v1/)
-  A calibrated 120-task release with 43 easy, 48 medium, and 29 hard tasks. It includes the complete public JSON pack, schemas, a dataset card, privacy notes, distribution analysis, four-model main-run results, charts, checksums, and a standalone validator.
+  A calibrated 120-task release with 43 easy, 48 medium, and 29 hard tasks. It includes the complete public JSON pack, schemas, a dataset card, privacy notes, distribution analysis, four-model comparison results, charts, checksums, and a standalone validator.
 
 ## Scope
 
