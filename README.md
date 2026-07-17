@@ -84,6 +84,8 @@ Dataset summary:
 
 The companion package [WorkforceOps Enterprise Operations Redacted Data Package v1](./datasets/workforceops-enterprise-operations-redacted-data-v1/) contains the public redacted tables and QA grounding needed to reproduce the benchmark context. The package includes a machine-readable manifest and validation artifacts showing that benchmark cases, QA grounding, and public CSV metrics are aligned.
 
+The repository also includes a [calibrated 120-task public release](./datasets/workforceops-benchmark-120-public-v1/) with 43 easy, 48 medium, and 29 hard tasks, together with dataset analysis, four-model main-run results, charts, schemas, checksums, and a standalone validator.
+
 This benchmark is not just a question-answer set. It evaluates whether an agent can respect mandate boundaries, privacy policy, redlines, expected artifacts, and tool-call intent in realistic workforce operations.
 
 ## License

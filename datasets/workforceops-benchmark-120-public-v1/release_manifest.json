@@ -1,0 +1,24 @@
+{
+  "pack_id": "workforceops_benchmark_120_public_v1_2026_07_17",
+  "release_version": "1.0.0-rc1",
+  "license_status": "MIT",
+  "source_pack_sha256": "c212e71b6adcc83f68443fa47ee91cffe291d94541fae76f86643f76bc9bcc31",
+  "public_pack_file": "data/workforceops_benchmark_120_public_v1.json",
+  "removed_internal_fields": [
+    "source_tables",
+    "snapshot_sql_ref",
+    "dataset_id",
+    "target_ds",
+    "real_data_scope",
+    "internal generation and calibration provenance"
+  ],
+  "case_ids_preserved": true,
+  "business_semantics_preserved": true,
+  "difficulty_labels_preserved": true,
+  "public_redactions": [
+    "store display names remapped to numbered mock stores",
+    "worker aliases remapped to numbered mock workers",
+    "brand names generalized",
+    "health-certificate references generalized to entry documents"
+  ]
+}

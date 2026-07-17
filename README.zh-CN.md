@@ -84,6 +84,8 @@ UGP 还定义：
 
 配套数据包 [WorkforceOps Enterprise Operations Redacted Data Package v1](./datasets/workforceops-enterprise-operations-redacted-data-v1/) 提供可公开使用的脱敏依赖表和 QA grounding。包内包含机器可读 manifest 和校验制品，确认评测 cases、QA grounding 与公开 CSV 指标已对齐。
 
+仓库同时提供 [120 道业务题校准公开版](./datasets/workforceops-benchmark-120-public-v1/)，包含 43 道简单题、48 道中等题和 29 道困难题，并附数据集分析、四模型主运行结果、图表、Schema、校验和与独立校验脚本。
+
 这个评测不是单纯问答集。它评估的是 Agent 在企业用工运营语境下，是否理解授权边界、隐私策略、红线要求、预期产物和工具调用意图。
 
 ## 许可证
