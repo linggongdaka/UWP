@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 710" width="1200" height="710">
+<style>text {Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; letter-spacing:0;}</style>
+<defs>
+<marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/></marker>
+<marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#059669"/></marker>
+<marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#ea580c"/></marker>
+<marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/></marker>
+</defs>
+<rect width="1200" height="710" fill="#ffffff"/>
+<text x="600" y="44" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">UGP Layering: Protocol, Objects, Agents, Scenarios, Product Form</text>
+<text x="600" y="72" text-anchor="middle" font-size="14" font-weight="400" fill="#6b7280">Universal Gig Protocol</text>
+<rect x="440" y="120" width="320" height="118" rx="18" fill="#eff6ff" stroke="#93c5fd" stroke-width="2.4"/>
+<text x="600" y="154" text-anchor="middle" font-size="18" font-weight="700" fill="#1d4ed8">UGP</text>
+<text x="600" y="178" text-anchor="middle" font-size="18" font-weight="700" fill="#1d4ed8">Universal Gig Protocol</text>
+<text x="600" y="202" text-anchor="middle" font-size="18" font-weight="700" fill="#1d4ed8">Agent-Native Gig Work</text>
+<rect x="80" y="320" width="250" height="150" rx="12" ry="12" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.6"/>
+<text x="205.0" y="348" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Protocol Objects</text>
+<text x="205.0" y="372" text-anchor="middle" font-size="13" font-weight="400" fill="#4b5563">Labor State / Demand</text>
+<text x="205.0" y="390" text-anchor="middle" font-size="13" font-weight="400" fill="#4b5563">Opportunity / Contract</text>
+<text x="205.0" y="408" text-anchor="middle" font-size="13" font-weight="400" fill="#4b5563">Fulfillment / Credit</text>
+<rect x="360" y="322" width="220" height="148" rx="12" ry="12" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.6"/>
+<text x="470.0" y="350" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Three Agent Types</text>
+<text x="470.0" y="374" text-anchor="middle" font-size="13" font-weight="400" fill="#4b5563">Enterprise Agent</text>
+<text x="470.0" y="392" text-anchor="middle" font-size="13" font-weight="400" fill="#4b5563">Worker Agent</text>
+<text x="470.0" y="410" text-anchor="middle" font-size="13" font-weight="400" fill="#4b5563">Platform Agent</text>
+<rect x="620" y="322" width="230" height="148" rx="12" ry="12" fill="#faf5ff" stroke="#ddd6fe" stroke-width="1.6"/>
+<text x="735.0" y="350" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Business Scenarios</text>
+<text x="735.0" y="374" text-anchor="middle" font-size="13" font-weight="400" fill="#4b5563">Scheduling / Backfill / Accept</text>
+<text x="735.0" y="392" text-anchor="middle" font-size="13" font-weight="400" fill="#4b5563">Fulfillment / Settlement / Exit</text>
+<text x="735.0" y="410" text-anchor="middle" font-size="13" font-weight="400" fill="#4b5563">Future: Cross-border Gig Work</text>
+<rect x="900" y="320" width="240" height="150" rx="12" ry="12" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.6"/>
+<text x="1020.0" y="348" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Product Form</text>
+<text x="1020.0" y="372" text-anchor="middle" font-size="13" font-weight="400" fill="#4b5563">Agentic Workforce OS</text>
+<text x="1020.0" y="390" text-anchor="middle" font-size="13" font-weight="400" fill="#4b5563">AI Workforce OS</text>
+<text x="1020.0" y="408" text-anchor="middle" font-size="13" font-weight="400" fill="#4b5563">Application Layer</text>
+<path d="M 520 238 L 520 278 L 205 278 L 205 320" fill="none" stroke="#059669" stroke-width="2" marker-end="url(#arrow-green)"/>
+<path d="M 570 238 L 570 322" fill="none" stroke="#ea580c" stroke-width="2" marker-end="url(#arrow-orange)"/>
+<path d="M 650 238 L 650 280 L 735 280 L 735 322" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<path d="M 720 238 L 720 278 L 1020 278 L 1020 320" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<rect x="80" y="560" width="1060" height="110" rx="14" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5"/>
+<text x="130" y="595" text-anchor="start" font-size="15" font-weight="700" fill="#111827">Positioning</text>
+<text x="130" y="625" text-anchor="start" font-size="17" font-weight="700" fill="#111827">UGP is the protocol. Agentic Workforce OS is the product form. Workforce operations is an enterprise operations use case.</text>
+<text x="130" y="652" text-anchor="start" font-size="14" font-weight="400" fill="#4b5563">WorkforceOps can remain a UGP profile or reference implementation, not the top-level protocol name.</text>
+</svg>

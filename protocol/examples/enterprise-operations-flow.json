@@ -1,0 +1,94 @@
+{
+  "ugp_version": "2026-07",
+  "profile": "org.ugp.enterprise_operations",
+  "flow_id": "flow_enterprise_operations_alias_001",
+  "steps": [
+    {
+      "step": 1,
+      "capability": "org.ugp.discovery.profile",
+      "result": {
+        "active_profiles": [
+          "org.ugp.core",
+          "org.ugp.enterprise_operations"
+        ]
+      }
+    },
+    {
+      "step": 2,
+      "capability": "org.ugp.demand.create",
+      "object": {
+        "object_type": "workforce_demand",
+        "id": "demand_alias_20260717_001",
+        "enterprise_ref": "enterprise_alias_001",
+        "site_ref": "store_alias_a",
+        "role": "tea_shop_worker",
+        "headcount": 3,
+        "time_window": {
+          "start": "2026-07-18T14:00:00+08:00",
+          "end": "2026-07-18T18:00:00+08:00"
+        },
+        "credential_requirements": [
+          {
+            "type": "health_certificate",
+            "verification": "valid"
+          }
+        ],
+        "compensation": {
+          "rate": "25 CNY/hour"
+        },
+        "service_level": {
+          "fill_before": "2026-07-17T22:00:00+08:00"
+        }
+      },
+      "policy_decision": "ASK_CONFIRMATION",
+      "required_mandate": "demand_mandate"
+    },
+    {
+      "step": 3,
+      "capability": "org.ugp.matching.run",
+      "result": {
+        "candidate_count": 7,
+        "recommended_count": 3,
+        "masked": true
+      }
+    },
+    {
+      "step": 4,
+      "capability": "org.ugp.contract.prepare_confirm",
+      "object": {
+        "object_type": "work_contract",
+        "id": "contract_alias_20260717_001",
+        "status": "prepared",
+        "responsible_entity": {
+          "entity_ref": "enterprise_alias_001",
+          "model": "platform_service"
+        },
+        "mandates": [
+          {
+            "type": "demand_mandate",
+            "status": "requested"
+          }
+        ]
+      }
+    },
+    {
+      "step": 5,
+      "capability": "org.ugp.fulfillment.business_verification.prepare",
+      "object": {
+        "object_type": "fulfillment_record",
+        "id": "fulfillment_alias_20260718_001",
+        "contract_ref": "contract_alias_20260717_001",
+        "verification_status": "pending_business_verification"
+      }
+    },
+    {
+      "step": 6,
+      "capability": "org.ugp.settlement.prepare",
+      "gate": {
+        "requires_fulfillment_evidence": true,
+        "requires_settlement_mandate": true,
+        "blocks_without_responsible_entity": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780">
+<style>text {Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; letter-spacing:0;}</style>
+<defs>
+<marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#059669"/></marker>
+<marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#ea580c"/></marker>
+<marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/></marker>
+</defs>
+<rect width="1200" height="780" fill="#ffffff"/>
+<text x="600" y="44" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">Three Agent Types on UGP</text>
+<text x="600" y="72" text-anchor="middle" font-size="14" font-weight="400" fill="#6b7280">Enterprise demand, worker intent, and platform fulfillment operate in one protocol language</text>
+<rect x="360" y="115" width="480" height="96" rx="18" fill="#eff6ff" stroke="#93c5fd" stroke-width="2.2"/>
+<text x="600" y="152" text-anchor="middle" font-size="18" font-weight="700" fill="#1d4ed8">UGP / Universal Gig Protocol</text>
+<text x="600" y="176" text-anchor="middle" font-size="18" font-weight="700" fill="#1d4ed8">Understand · Negotiate · Commit · Execute · Review</text>
+<rect x="95" y="300" width="320" height="300" rx="16" ry="16" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.8"/>
+<text x="255" y="340" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">Enterprise Agent</text>
+<text x="255" y="368" text-anchor="middle" font-size="14" font-weight="600" fill="#4b5563">Workforce Operations</text>
+<rect x="137" y="388" width="236" height="26" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1"/>
+<text x="255" y="406" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Schedule Planning</text>
+<rect x="137" y="422" width="236" height="26" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1"/>
+<text x="255" y="440" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Urgent Backfill</text>
+<rect x="137" y="456" width="236" height="26" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1"/>
+<text x="255" y="474" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Labor Status</text>
+<rect x="137" y="490" width="236" height="26" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1"/>
+<text x="255" y="508" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Exit Handover</text>
+<rect x="137" y="524" width="236" height="26" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1"/>
+<text x="255" y="542" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Fulfillment Judgement</text>
+<rect x="440" y="300" width="320" height="300" rx="16" ry="16" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.8"/>
+<text x="600" y="340" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">Worker Agent</text>
+<text x="600" y="368" text-anchor="middle" font-size="14" font-weight="600" fill="#4b5563">Opportunity Management</text>
+<rect x="482" y="388" width="236" height="26" rx="8" fill="#ffffff" stroke="#bbf7d0" stroke-width="1"/>
+<text x="600" y="406" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Job Discovery</text>
+<rect x="482" y="422" width="236" height="26" rx="8" fill="#ffffff" stroke="#bbf7d0" stroke-width="1"/>
+<text x="600" y="440" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Acceptance Confirmation</text>
+<rect x="482" y="456" width="236" height="26" rx="8" fill="#ffffff" stroke="#bbf7d0" stroke-width="1"/>
+<text x="600" y="474" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Arrival Reminder</text>
+<rect x="482" y="490" width="236" height="26" rx="8" fill="#ffffff" stroke="#bbf7d0" stroke-width="1"/>
+<text x="600" y="508" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Income Reconciliation</text>
+<rect x="482" y="524" width="236" height="26" rx="8" fill="#ffffff" stroke="#bbf7d0" stroke-width="1"/>
+<text x="600" y="542" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Credit Building</text>
+<rect x="785" y="300" width="320" height="300" rx="16" ry="16" fill="#faf5ff" stroke="#ddd6fe" stroke-width="1.8"/>
+<text x="945" y="340" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">Platform Agent</text>
+<text x="945" y="368" text-anchor="middle" font-size="14" font-weight="600" fill="#4b5563">Fulfillment Orchestration</text>
+<rect x="827" y="388" width="236" height="26" rx="8" fill="#ffffff" stroke="#ddd6fe" stroke-width="1"/>
+<text x="945" y="406" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Supply-Demand Matching</text>
+<rect x="827" y="422" width="236" height="26" rx="8" fill="#ffffff" stroke="#ddd6fe" stroke-width="1"/>
+<text x="945" y="440" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Risk Detection</text>
+<rect x="827" y="456" width="236" height="26" rx="8" fill="#ffffff" stroke="#ddd6fe" stroke-width="1"/>
+<text x="945" y="474" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Backup Dispatch</text>
+<rect x="827" y="490" width="236" height="26" rx="8" fill="#ffffff" stroke="#ddd6fe" stroke-width="1"/>
+<text x="945" y="508" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Exception Handling</text>
+<rect x="827" y="524" width="236" height="26" rx="8" fill="#ffffff" stroke="#ddd6fe" stroke-width="1"/>
+<text x="945" y="542" text-anchor="middle" font-size="13" font-weight="500" fill="#374151">Settlement Credit</text>
+<path d="M 600 211 L 600 250 L 255 250 L 255 300" fill="none" stroke="#ea580c" stroke-width="2" marker-end="url(#arrow-orange)"/>
+<path d="M 600 211 L 600 250 L 600 250 L 600 300" fill="none" stroke="#059669" stroke-width="2" marker-end="url(#arrow-green)"/>
+<path d="M 600 211 L 600 250 L 945 250 L 945 300" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<rect x="450" y="235" width="300" height="38" rx="10" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.2"/>
+<text x="600" y="259" text-anchor="middle" font-size="13" font-weight="600" fill="#374151">One protocol, divided execution</text>
+<rect x="115" y="660" width="970" height="70" rx="14" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.4"/>
+<text x="155" y="688" text-anchor="start" font-size="14" font-weight="700" fill="#111827">Shared Protocol Objects</text>
+<text x="600" y="710" text-anchor="middle" font-size="17" font-weight="700" fill="#111827">Labor State · Workforce Demand · Work Opportunity · Work Contract · Fulfillment Record · Settlement Credit</text>
+<path d="M 255 600 L 255 642 L 600 642 L 600 660" fill="none" stroke="#ea580c" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arrow-orange)"/>
+<path d="M 600 600 L 600 642 L 600 642 L 600 660" fill="none" stroke="#059669" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arrow-green)"/>
+<path d="M 945 600 L 945 642 L 600 642 L 600 660" fill="none" stroke="#7c3aed" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arrow-purple)"/>
+</svg>

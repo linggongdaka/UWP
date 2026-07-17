@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "https://ugp.example.org/schemas/ugp-envelope.schema.json",
+  "title": "UGP Message Envelope",
+  "type": "object",
+  "required": [
+    "ugp_version",
+    "msg_id",
+    "msg_type",
+    "ts",
+    "from",
+    "to",
+    "profile",
+    "body"
+  ],
+  "properties": {
+    "ugp_version": {
+      "type": "string"
+    },
+    "msg_id": {
+      "type": "string"
+    },
+    "msg_type": {
+      "type": "string"
+    },
+    "ts": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "from": {
+      "$ref": "#/$defs/party"
+    },
+    "to": {
+      "$ref": "#/$defs/party"
+    },
+    "profile": {
+      "type": "string"
+    },
+    "capabilities": {
+      "type": "object",
+      "properties": {
+        "requested": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "required": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "body": {
+      "type": "object"
+    },
+    "sig": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "party": {
+      "type": "object",
+      "required": [
+        "role"
+      ],
+      "properties": {
+        "role": {
+          "type": "string"
+        },
+        "agent_id": {
+          "type": "string"
+        },
+        "entity_ref": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

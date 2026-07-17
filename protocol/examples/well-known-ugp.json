@@ -1,0 +1,102 @@
+{
+  "ugp_version": "2026-07",
+  "publisher": {
+    "role": "workforce_platform",
+    "entity_ref": "org_example_platform"
+  },
+  "supported_versions": {
+    "2026-07": "https://platform.example.com/.well-known/ugp"
+  },
+  "profiles": [
+    "org.ugp.core",
+    "org.ugp.enterprise_operations"
+  ],
+  "services": {
+    "org.ugp.workforce": [
+      {
+        "version": "2026-07-17",
+        "transport": "rest",
+        "spec": "https://platform.example.com/specs/ugp/workforce",
+        "schema": "https://platform.example.com/schemas/ugp/workforce.openapi.json",
+        "endpoint": "https://platform.example.com/api/ugp"
+      },
+      {
+        "version": "2026-07-17",
+        "transport": "mcp",
+        "spec": "https://platform.example.com/specs/ugp/mcp",
+        "schema": "https://platform.example.com/schemas/ugp/mcp.openrpc.json",
+        "endpoint": "https://platform.example.com/mcp"
+      }
+    ]
+  },
+  "capabilities": {
+    "org.ugp.discovery.profile": [
+      {
+        "version": "2026-07-17",
+        "profile": "org.ugp.core",
+        "spec": "https://platform.example.com/specs/ugp/capabilities/discovery.profile",
+        "schema": "https://platform.example.com/schemas/ugp/discovery.profile.schema.json",
+        "side_effect": "data_read",
+        "risk_level": "R0"
+      }
+    ],
+    "org.ugp.demand.create": [
+      {
+        "version": "2026-07-17",
+        "profile": "org.ugp.enterprise_operations",
+        "spec": "https://platform.example.com/specs/ugp/capabilities/demand.create",
+        "schema": "https://platform.example.com/schemas/ugp/demand.create.schema.json",
+        "side_effect": "data_write_prepare",
+        "risk_level": "R3",
+        "requires_mandate": "demand_mandate"
+      }
+    ],
+    "org.ugp.matching.run": [
+      {
+        "version": "2026-07-17",
+        "profile": "org.ugp.enterprise_operations",
+        "spec": "https://platform.example.com/specs/ugp/capabilities/matching.run",
+        "schema": "https://platform.example.com/schemas/ugp/matching.run.schema.json",
+        "side_effect": "data_read",
+        "risk_level": "R2"
+      }
+    ],
+    "org.ugp.settlement.prepare": [
+      {
+        "version": "2026-07-17",
+        "profile": "org.ugp.enterprise_operations",
+        "spec": "https://platform.example.com/specs/ugp/capabilities/settlement.prepare",
+        "schema": "https://platform.example.com/schemas/ugp/settlement.prepare.schema.json",
+        "side_effect": "data_write_prepare",
+        "risk_level": "R4",
+        "requires_mandate": "settlement_mandate"
+      }
+    ]
+  },
+  "policy": {
+    "data_classification": [
+      "public",
+      "internal",
+      "confidential",
+      "sensitive",
+      "restricted"
+    ],
+    "decisions": [
+      "ALLOW",
+      "MASK_AND_ALLOW",
+      "ASK_CONFIRMATION",
+      "ESCALATE",
+      "DENY"
+    ]
+  },
+  "keys": [
+    {
+      "kid": "ugp-key-2026-07",
+      "jwk_url": "https://platform.example.com/.well-known/jwks.json"
+    }
+  ],
+  "conformance": [
+    "org.ugp.core.server",
+    "org.ugp.enterprise_operations.server"
+  ]
+}

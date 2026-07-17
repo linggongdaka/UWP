@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720">
+<style>text {Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; letter-spacing:0;}</style>
+<defs>
+<marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/></marker>
+<marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#059669"/></marker>
+<marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#ea580c"/></marker>
+<marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/></marker>
+<marker id="arrow-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/></marker>
+<marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/></marker>
+</defs>
+<rect width="1200" height="720" fill="#ffffff"/>
+<text x="600.0" y="46" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">Capability Invocation with Policy Gate</text>
+<text x="600.0" y="74" text-anchor="middle" font-size="14" font-weight="400" fill="#6b7280">Agents call business capabilities through explicit risk, permission, confirmation, and audit controls</text>
+<rect x="70" y="190" width="170" height="100" rx="14" ry="14" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.6"/>
+<text x="155" y="228" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Agent Request</text>
+<text x="155" y="256" text-anchor="middle" font-size="11" font-weight="500" fill="#4b5563">natural language or task intent</text>
+<rect x="300" y="190" width="170" height="100" rx="14" ry="14" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.6"/>
+<text x="385" y="228" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Capability Manifest</text>
+<text x="385" y="256" text-anchor="middle" font-size="11" font-weight="500" fill="#4b5563">declared inputs, outputs, risk</text>
+<rect x="530" y="190" width="170" height="100" rx="14" ry="14" fill="#faf5ff" stroke="#ddd6fe" stroke-width="1.6"/>
+<text x="615" y="228" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Policy Evaluate</text>
+<text x="615" y="256" text-anchor="middle" font-size="11" font-weight="500" fill="#4b5563">scope, data class, action risk</text>
+<rect x="760" y="190" width="170" height="100" rx="14" ry="14" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.6"/>
+<text x="845" y="228" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Decision</text>
+<text x="845" y="256" text-anchor="middle" font-size="11" font-weight="500" fill="#4b5563">allow, mask, confirm, escalate, deny</text>
+<rect x="990" y="190" width="170" height="100" rx="14" ry="14" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.6"/>
+<text x="1075" y="228" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Business Action</text>
+<text x="1075" y="256" text-anchor="middle" font-size="11" font-weight="500" fill="#4b5563">read, prepare, commit, external call</text>
+<path d="M 240 240 L 300 240" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<path d="M 470 240 L 530 240" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<path d="M 700 240 L 760 240" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<path d="M 930 240 L 990 240" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<rect x="165" y="420" width="130" height="52" rx="10" ry="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.4"/>
+<text x="230" y="453" text-anchor="middle" font-size="14" font-weight="700" fill="#166534">ALLOW</text>
+<path d="M 845 290 L 845 350 L 230 350 L 230 420" fill="none" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow-gray)"/>
+<rect x="335" y="420" width="130" height="52" rx="10" ry="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.4"/>
+<text x="400" y="453" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">MASK</text>
+<path d="M 845 290 L 845 350 L 400 350 L 400 420" fill="none" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow-gray)"/>
+<rect x="505" y="420" width="130" height="52" rx="10" ry="10" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.4"/>
+<text x="570" y="453" text-anchor="middle" font-size="14" font-weight="700" fill="#9a3412">CONFIRM</text>
+<path d="M 845 290 L 845 350 L 570 350 L 570 420" fill="none" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow-gray)"/>
+<rect x="675" y="420" width="130" height="52" rx="10" ry="10" fill="#faf5ff" stroke="#ddd6fe" stroke-width="1.4"/>
+<text x="740" y="453" text-anchor="middle" font-size="14" font-weight="700" fill="#6b21a8">ESCALATE</text>
+<path d="M 845 290 L 845 350 L 740 350 L 740 420" fill="none" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow-gray)"/>
+<rect x="845" y="420" width="130" height="52" rx="10" ry="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.4"/>
+<text x="910" y="453" text-anchor="middle" font-size="14" font-weight="700" fill="#991b1b">DENY</text>
+<path d="M 845 290 L 845 350 L 910 350 L 910 420" fill="none" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow-gray)"/>
+<rect x="435" y="545" width="330" height="72" rx="14" ry="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.3"/>
+<text x="600" y="576" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Human Controller / Mandate</text>
+<text x="600" y="602" text-anchor="middle" font-size="12" font-weight="500" fill="#6b7280">required for high-risk write or settlement actions</text>
+<path d="M 570 472 L 570 545" fill="none" stroke="#ea580c" stroke-width="2" marker-end="url(#arrow-orange)"/>
+<rect x="850" y="545" width="260" height="72" rx="14" ry="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.3"/>
+<text x="980" y="578" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Audit Trace</text>
+<text x="980" y="603" text-anchor="middle" font-size="12" font-weight="500" fill="#6b7280">who did what, when, and why</text>
+<path d="M 1075 290 L 1075 545" fill="none" stroke="#059669" stroke-width="1.7" stroke-dasharray="5 4" marker-end="url(#arrow-green)"/>
+</svg>

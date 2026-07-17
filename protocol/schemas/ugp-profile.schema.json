@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "https://ugp.example.org/schemas/ugp-profile.schema.json",
+  "title": "UGP Profile Document",
+  "type": "object",
+  "required": [
+    "ugp_version",
+    "publisher",
+    "profiles",
+    "services",
+    "capabilities",
+    "policy"
+  ],
+  "properties": {
+    "ugp_version": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "object",
+      "required": [
+        "role",
+        "entity_ref"
+      ],
+      "properties": {
+        "role": {
+          "type": "string"
+        },
+        "entity_ref": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "supported_versions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "profiles": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(\\.[a-z0-9_]+)+$"
+      }
+    },
+    "services": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/service_binding"
+        }
+      }
+    },
+    "capabilities": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/capability"
+        }
+      }
+    },
+    "policy": {
+      "type": "object"
+    },
+    "keys": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "conformance": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "service_binding": {
+      "type": "object",
+      "required": [
+        "version",
+        "transport",
+        "spec"
+      ],
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "transport": {
+          "type": "string",
+          "enum": [
+            "rest",
+            "mcp",
+            "a2a",
+            "event",
+            "rpc"
+          ]
+        },
+        "spec": {
+          "type": "string",
+          "format": "uri"
+        },
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        },
+        "endpoint": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "additionalProperties": true
+    },
+    "capability": {
+      "type": "object",
+      "required": [
+        "version",
+        "profile",
+        "spec",
+        "schema",
+        "side_effect",
+        "risk_level"
+      ],
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "profile": {
+          "type": "string"
+        },
+        "spec": {
+          "type": "string",
+          "format": "uri"
+        },
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        },
+        "side_effect": {
+          "type": "string",
+          "enum": [
+            "data_read",
+            "data_write_prepare",
+            "data_write_commit",
+            "external_call"
+          ]
+        },
+        "risk_level": {
+          "type": "string",
+          "enum": [
+            "R0",
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5"
+          ]
+        },
+        "requires_mandate": {
+          "type": "string"
+        },
+        "extends": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

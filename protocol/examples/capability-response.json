@@ -1,0 +1,47 @@
+{
+  "ugp": {
+    "version": "2026-07",
+    "active_profiles": [
+      "org.ugp.core",
+      "org.ugp.enterprise_operations"
+    ],
+    "active_capabilities": [
+      "org.ugp.demand.create",
+      "org.ugp.matching.run",
+      "org.ugp.contract.prepare_confirm",
+      "org.ugp.policy.evaluate",
+      "org.ugp.audit.record"
+    ],
+    "inactive_capabilities": [
+      {
+        "name": "com.example.staffing.fast_backup_dispatch",
+        "reason": "capability_not_available"
+      }
+    ]
+  },
+  "policy_decision": {
+    "decision": "ASK_CONFIRMATION",
+    "reason_codes": [
+      "HIGH_RISK_SCHEDULING_COMMIT"
+    ],
+    "required_mandate": "demand_mandate",
+    "masked_fields": [],
+    "audit_required": true
+  },
+  "mandate_request": {
+    "mandate_type": "demand_mandate",
+    "principal_ref": "enterprise_manager_alias_01",
+    "scope": [
+      "site:store_alias_a",
+      "action:demand.create",
+      "action:contract.prepare_confirm"
+    ],
+    "expires_at": "2026-07-17T22:00:00+08:00"
+  },
+  "result": {
+    "object_type": "workforce_demand",
+    "id": "demand_alias_20260717_001",
+    "status": "prepared"
+  },
+  "audit_ref": "audit_alias_20260717_001"
+}

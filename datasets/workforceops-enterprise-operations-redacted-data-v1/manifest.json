@@ -1,0 +1,441 @@
+{
+  "package_id": "workforceops-enterprise-operations-redacted-data-v1",
+  "dataset_id": "workforceops_enterprise_operations_redacted_data_v1_20260531",
+  "protocol": {
+    "name": "UGP",
+    "full_name": "Universal Gig Protocol",
+    "version": "2026-07",
+    "profile": "org.ugp.enterprise_operations",
+    "scope": "gig_work_relationships",
+    "context_note": "Source systems may also support full-time workers; full-time HCM capabilities are outside UGP conformance scope."
+  },
+  "scope": "enterprise-side workforce management scenarios only",
+  "target_month": "2026-05",
+  "target_ds": "20260531",
+  "license": "MIT",
+  "privacy": {
+    "production_data": false,
+    "source_data": "redacted_business_operations_snapshot",
+    "public_eval_safe": true,
+    "entity_path_in_output": "synthetic_store_name",
+    "worker_identity_in_output": "stable_aliases_only_in_dependent_tables; not_carried_into_adapted_benchmark_cases",
+    "business_metrics": "preserved_for_benchmark_reproducibility",
+    "private_redaction_map": "excluded_from_public_repository",
+    "private_redaction_map_committed": false,
+    "dependent_dataset": "workforceops-enterprise-operations-redacted-data-v1"
+  },
+  "benchmark_cases": {
+    "public_120_case_pack": "benchmark/cases/workforceops-enterprise-operations-benchmark-v1.json",
+    "root_120_case_pack": "../workforceops-enterprise-operations-benchmark-v1.json"
+  },
+  "qa_grounding": "qa/workforceops-enterprise-operations-qa-grounding-redacted-v1.json",
+  "tables": [
+    {
+      "path": "tables/anchor_stores.csv",
+      "rows": 30,
+      "description": "Synthetic public anchor stores and entity aliases."
+    },
+    {
+      "path": "tables/bills_may.csv",
+      "rows": 136,
+      "description": "Redacted bill and invoice aggregates for May 2026."
+    },
+    {
+      "path": "tables/comments_may.csv",
+      "rows": 7395,
+      "description": "Redacted store-level comment and rating aggregates for May 2026."
+    },
+    {
+      "path": "tables/demand_schedule_may.csv",
+      "rows": 3050,
+      "description": "Redacted demand and schedule aggregates for May 2026."
+    },
+    {
+      "path": "tables/insurance_claims_may.csv",
+      "rows": 9369,
+      "description": "Redacted insurance and claim aggregates for May 2026."
+    },
+    {
+      "path": "tables/salary_records_may.csv",
+      "rows": 5817,
+      "description": "Redacted salary and fee aggregates for May 2026."
+    },
+    {
+      "path": "tables/schedule_attendance_may.csv",
+      "rows": 11347,
+      "description": "Redacted schedule, attendance, and work-hour aggregates for May 2026."
+    },
+    {
+      "path": "tables/store_roster_may.csv",
+      "rows": 955,
+      "description": "Redacted roster and worker-profile aggregates for May 2026."
+    },
+    {
+      "path": "tables/training_may.csv",
+      "rows": 1070,
+      "description": "Redacted training and certificate aggregates for May 2026."
+    }
+  ],
+  "entity_alias_map": [
+    {
+      "entity_alias": "anchor_store_01_01",
+      "industry": "火锅",
+      "industry_rank": 1,
+      "anchor_store_rank": 1,
+      "entity_path": "A市星桥火锅店",
+      "enterprise_id": "enterprise_ref_434012",
+      "enterprise_name": "合成运营主体_434012",
+      "store_id": "store_ref_127991",
+      "region_name": "A市",
+      "store_name": "A市星桥火锅店"
+    },
+    {
+      "entity_alias": "anchor_store_01_02",
+      "industry": "火锅",
+      "industry_rank": 1,
+      "anchor_store_rank": 2,
+      "entity_path": "B市青禾火锅店",
+      "enterprise_id": "enterprise_ref_777598",
+      "enterprise_name": "合成运营主体_777598",
+      "store_id": "store_ref_284829",
+      "region_name": "B市",
+      "store_name": "B市青禾火锅店"
+    },
+    {
+      "entity_alias": "anchor_store_01_03",
+      "industry": "火锅",
+      "industry_rank": 1,
+      "anchor_store_rank": 3,
+      "entity_path": "C市云栖火锅店",
+      "enterprise_id": "enterprise_ref_052074",
+      "enterprise_name": "合成运营主体_052074",
+      "store_id": "store_ref_903801",
+      "region_name": "C市",
+      "store_name": "C市云栖火锅店"
+    },
+    {
+      "entity_alias": "anchor_store_01_04",
+      "industry": "火锅",
+      "industry_rank": 1,
+      "anchor_store_rank": 4,
+      "entity_path": "D市锦澜火锅店",
+      "enterprise_id": "enterprise_ref_052074",
+      "enterprise_name": "合成运营主体_052074",
+      "store_id": "store_ref_322392",
+      "region_name": "D市",
+      "store_name": "D市锦澜火锅店"
+    },
+    {
+      "entity_alias": "anchor_store_01_05",
+      "industry": "火锅",
+      "industry_rank": 1,
+      "anchor_store_rank": 5,
+      "entity_path": "E市南棠火锅店",
+      "enterprise_id": "enterprise_ref_777598",
+      "enterprise_name": "合成运营主体_777598",
+      "store_id": "store_ref_904163",
+      "region_name": "E市",
+      "store_name": "E市南棠火锅店"
+    },
+    {
+      "entity_alias": "anchor_store_02_01",
+      "industry": "西餐",
+      "industry_rank": 2,
+      "anchor_store_rank": 1,
+      "entity_path": "F市北辰西餐店",
+      "enterprise_id": "enterprise_ref_113193",
+      "enterprise_name": "合成运营主体_113193",
+      "store_id": "store_ref_185285",
+      "region_name": "F市",
+      "store_name": "F市北辰西餐店"
+    },
+    {
+      "entity_alias": "anchor_store_02_02",
+      "industry": "西餐",
+      "industry_rank": 2,
+      "anchor_store_rank": 2,
+      "entity_path": "G市晴川西餐店",
+      "enterprise_id": "enterprise_ref_671998",
+      "enterprise_name": "合成运营主体_671998",
+      "store_id": "store_ref_706758",
+      "region_name": "G市",
+      "store_name": "G市晴川西餐店"
+    },
+    {
+      "entity_alias": "anchor_store_02_03",
+      "industry": "西餐",
+      "industry_rank": 2,
+      "anchor_store_rank": 3,
+      "entity_path": "K市明庭西餐店",
+      "enterprise_id": "enterprise_ref_671998",
+      "enterprise_name": "合成运营主体_671998",
+      "store_id": "store_ref_252533",
+      "region_name": "K市",
+      "store_name": "K市明庭西餐店"
+    },
+    {
+      "entity_alias": "anchor_store_02_04",
+      "industry": "西餐",
+      "industry_rank": 2,
+      "anchor_store_rank": 4,
+      "entity_path": "H市新序西餐店",
+      "enterprise_id": "enterprise_ref_671998",
+      "enterprise_name": "合成运营主体_671998",
+      "store_id": "store_ref_874261",
+      "region_name": "H市",
+      "store_name": "H市新序西餐店"
+    },
+    {
+      "entity_alias": "anchor_store_02_05",
+      "industry": "西餐",
+      "industry_rank": 2,
+      "anchor_store_rank": 5,
+      "entity_path": "I市禾里西餐店",
+      "enterprise_id": "enterprise_ref_671998",
+      "enterprise_name": "合成运营主体_671998",
+      "store_id": "store_ref_774663",
+      "region_name": "I市",
+      "store_name": "I市禾里西餐店"
+    },
+    {
+      "entity_alias": "anchor_store_03_01",
+      "industry": "商超",
+      "industry_rank": 3,
+      "anchor_store_rank": 1,
+      "entity_path": "W市兰亭商超门店",
+      "enterprise_id": "enterprise_ref_534022",
+      "enterprise_name": "合成运营主体_534022",
+      "store_id": "store_ref_031747",
+      "region_name": "W市",
+      "store_name": "W市兰亭商超门店"
+    },
+    {
+      "entity_alias": "anchor_store_03_02",
+      "industry": "商超",
+      "industry_rank": 3,
+      "anchor_store_rank": 2,
+      "entity_path": "J市嘉木商超门店",
+      "enterprise_id": "enterprise_ref_184656",
+      "enterprise_name": "合成运营主体_184656",
+      "store_id": "store_ref_624828",
+      "region_name": "J市",
+      "store_name": "J市嘉木商超门店"
+    },
+    {
+      "entity_alias": "anchor_store_03_03",
+      "industry": "商超",
+      "industry_rank": 3,
+      "anchor_store_rank": 3,
+      "entity_path": "X市远岚商超门店",
+      "enterprise_id": "enterprise_ref_184656",
+      "enterprise_name": "合成运营主体_184656",
+      "store_id": "store_ref_260139",
+      "region_name": "X市",
+      "store_name": "X市远岚商超门店"
+    },
+    {
+      "entity_alias": "anchor_store_03_04",
+      "industry": "商超",
+      "industry_rank": 3,
+      "anchor_store_rank": 4,
+      "entity_path": "Y市白鹭商超门店",
+      "enterprise_id": "enterprise_ref_184656",
+      "enterprise_name": "合成运营主体_184656",
+      "store_id": "store_ref_652606",
+      "region_name": "Y市",
+      "store_name": "Y市白鹭商超门店"
+    },
+    {
+      "entity_alias": "anchor_store_03_05",
+      "industry": "商超",
+      "industry_rank": 3,
+      "anchor_store_rank": 5,
+      "entity_path": "Z市枫林商超门店",
+      "enterprise_id": "enterprise_ref_184656",
+      "enterprise_name": "合成运营主体_184656",
+      "store_id": "store_ref_701684",
+      "region_name": "Z市",
+      "store_name": "Z市枫林商超门店"
+    },
+    {
+      "entity_alias": "anchor_store_04_01",
+      "industry": "中餐",
+      "industry_rank": 4,
+      "anchor_store_rank": 1,
+      "entity_path": "L市川野中餐店",
+      "enterprise_id": "enterprise_ref_634361",
+      "enterprise_name": "合成运营主体_634361",
+      "store_id": "store_ref_067256",
+      "region_name": "L市",
+      "store_name": "L市川野中餐店"
+    },
+    {
+      "entity_alias": "anchor_store_04_02",
+      "industry": "中餐",
+      "industry_rank": 4,
+      "anchor_store_rank": 2,
+      "entity_path": "M市澄湾中餐店",
+      "enterprise_id": "enterprise_ref_634361",
+      "enterprise_name": "合成运营主体_634361",
+      "store_id": "store_ref_620145",
+      "region_name": "M市",
+      "store_name": "M市澄湾中餐店"
+    },
+    {
+      "entity_alias": "anchor_store_04_03",
+      "industry": "中餐",
+      "industry_rank": 4,
+      "anchor_store_rank": 3,
+      "entity_path": "N市安和中餐店",
+      "enterprise_id": "enterprise_ref_634361",
+      "enterprise_name": "合成运营主体_634361",
+      "store_id": "store_ref_139821",
+      "region_name": "N市",
+      "store_name": "N市安和中餐店"
+    },
+    {
+      "entity_alias": "anchor_store_04_04",
+      "industry": "中餐",
+      "industry_rank": 4,
+      "anchor_store_rank": 4,
+      "entity_path": "O市望舒中餐店",
+      "enterprise_id": "enterprise_ref_634361",
+      "enterprise_name": "合成运营主体_634361",
+      "store_id": "store_ref_556697",
+      "region_name": "O市",
+      "store_name": "O市望舒中餐店"
+    },
+    {
+      "entity_alias": "anchor_store_04_05",
+      "industry": "中餐",
+      "industry_rank": 4,
+      "anchor_store_rank": 5,
+      "entity_path": "P市启明中餐店",
+      "enterprise_id": "enterprise_ref_634361",
+      "enterprise_name": "合成运营主体_634361",
+      "store_id": "store_ref_844491",
+      "region_name": "P市",
+      "store_name": "P市启明中餐店"
+    },
+    {
+      "entity_alias": "anchor_store_05_01",
+      "industry": "咖啡",
+      "industry_rank": 5,
+      "anchor_store_rank": 1,
+      "entity_path": "Q市清越咖啡店",
+      "enterprise_id": "enterprise_ref_732274",
+      "enterprise_name": "合成运营主体_732274",
+      "store_id": "store_ref_048832",
+      "region_name": "Q市",
+      "store_name": "Q市清越咖啡店"
+    },
+    {
+      "entity_alias": "anchor_store_05_02",
+      "industry": "咖啡",
+      "industry_rank": 5,
+      "anchor_store_rank": 2,
+      "entity_path": "R市长乐咖啡店",
+      "enterprise_id": "enterprise_ref_732274",
+      "enterprise_name": "合成运营主体_732274",
+      "store_id": "store_ref_324811",
+      "region_name": "R市",
+      "store_name": "R市长乐咖啡店"
+    },
+    {
+      "entity_alias": "anchor_store_05_03",
+      "industry": "咖啡",
+      "industry_rank": 5,
+      "anchor_store_rank": 3,
+      "entity_path": "D市晓棠咖啡店",
+      "enterprise_id": "enterprise_ref_732274",
+      "enterprise_name": "合成运营主体_732274",
+      "store_id": "store_ref_809284",
+      "region_name": "D市",
+      "store_name": "D市晓棠咖啡店"
+    },
+    {
+      "entity_alias": "anchor_store_05_04",
+      "industry": "咖啡",
+      "industry_rank": 5,
+      "anchor_store_rank": 4,
+      "entity_path": "S市松间咖啡店",
+      "enterprise_id": "enterprise_ref_732274",
+      "enterprise_name": "合成运营主体_732274",
+      "store_id": "store_ref_803525",
+      "region_name": "S市",
+      "store_name": "S市松间咖啡店"
+    },
+    {
+      "entity_alias": "anchor_store_05_05",
+      "industry": "咖啡",
+      "industry_rank": 5,
+      "anchor_store_rank": 5,
+      "entity_path": "A市和光咖啡店",
+      "enterprise_id": "enterprise_ref_732274",
+      "enterprise_name": "合成运营主体_732274",
+      "store_id": "store_ref_191125",
+      "region_name": "A市",
+      "store_name": "A市和光咖啡店"
+    },
+    {
+      "entity_alias": "anchor_store_06_01",
+      "industry": "茶饮",
+      "industry_rank": 6,
+      "anchor_store_rank": 1,
+      "entity_path": "T市春浦茶饮店",
+      "enterprise_id": "enterprise_ref_224623",
+      "enterprise_name": "合成运营主体_224623",
+      "store_id": "store_ref_832636",
+      "region_name": "T市",
+      "store_name": "T市春浦茶饮店"
+    },
+    {
+      "entity_alias": "anchor_store_06_02",
+      "industry": "茶饮",
+      "industry_rank": 6,
+      "anchor_store_rank": 2,
+      "entity_path": "B市金穗茶饮店",
+      "enterprise_id": "enterprise_ref_100337",
+      "enterprise_name": "合成运营主体_100337",
+      "store_id": "store_ref_696194",
+      "region_name": "B市",
+      "store_name": "B市金穗茶饮店"
+    },
+    {
+      "entity_alias": "anchor_store_06_03",
+      "industry": "茶饮",
+      "industry_rank": 6,
+      "anchor_store_rank": 3,
+      "entity_path": "U市竹里茶饮店",
+      "enterprise_id": "enterprise_ref_585401",
+      "enterprise_name": "合成运营主体_585401",
+      "store_id": "store_ref_764685",
+      "region_name": "U市",
+      "store_name": "U市竹里茶饮店"
+    },
+    {
+      "entity_alias": "anchor_store_06_04",
+      "industry": "茶饮",
+      "industry_rank": 6,
+      "anchor_store_rank": 4,
+      "entity_path": "V市瑞庭茶饮店",
+      "enterprise_id": "enterprise_ref_585401",
+      "enterprise_name": "合成运营主体_585401",
+      "store_id": "store_ref_316140",
+      "region_name": "V市",
+      "store_name": "V市瑞庭茶饮店"
+    },
+    {
+      "entity_alias": "anchor_store_06_05",
+      "industry": "茶饮",
+      "industry_rank": 6,
+      "anchor_store_rank": 5,
+      "entity_path": "C市微澜茶饮店",
+      "enterprise_id": "enterprise_ref_138037",
+      "enterprise_name": "合成运营主体_138037",
+      "store_id": "store_ref_757598",
+      "region_name": "C市",
+      "store_name": "C市微澜茶饮店"
+    }
+  ]
+}

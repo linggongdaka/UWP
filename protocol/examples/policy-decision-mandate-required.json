@@ -1,0 +1,15 @@
+{
+  "type": "policy_decision",
+  "decision": "ASK_CONFIRMATION",
+  "reason_codes": [
+    "HIGH_RISK_SETTLEMENT_ADJUSTMENT",
+    "WORKER_OUTCOME_IMPACT"
+  ],
+  "required_mandate": "settlement_mandate",
+  "risk_level": "R4",
+  "data_classification": "confidential",
+  "masked_fields": [],
+  "audit_required": true,
+  "continue_url": "https://platform.example.com/confirm/mandate_alias_001",
+  "message": "Settlement adjustment can be prepared, but it must not be committed before an authorized settlement mandate is confirmed."
+}

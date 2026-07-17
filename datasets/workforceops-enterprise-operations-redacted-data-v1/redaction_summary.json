@@ -1,0 +1,238 @@
+{
+  "package": "workforceops_redacted-data_redacted_2026-06-06",
+  "generated_at": "2026-06-06",
+  "row_counts": {
+    "anchor_stores.csv": 30,
+    "bills_may.csv": 136,
+    "comments_may.csv": 7395,
+    "demand_schedule_may.csv": 3050,
+    "insurance_claims_may.csv": 9369,
+    "salary_records_may.csv": 5817,
+    "schedule_attendance_may.csv": 11347,
+    "store_roster_may.csv": 955,
+    "training_may.csv": 1070
+  },
+  "stable_alias_counts": {
+    "bill": 136,
+    "department": 79,
+    "enterprise": 13,
+    "job": 44,
+    "store": 30,
+    "task": 252,
+    "training": 11,
+    "worker": 972
+  },
+  "stores": [
+    {
+      "store_alias": "anchor_store_public_01",
+      "display_store": "A市和光咖啡店",
+      "display_enterprise": "A市和光咖啡运营主体",
+      "display_region": "A市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_02",
+      "display_store": "A市星桥火锅店",
+      "display_enterprise": "A市星桥火锅运营主体",
+      "display_region": "A市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_03",
+      "display_store": "B市金穗茶饮店",
+      "display_enterprise": "B市金穗茶饮运营主体",
+      "display_region": "B市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_04",
+      "display_store": "B市青禾火锅店",
+      "display_enterprise": "B市青禾火锅运营主体",
+      "display_region": "B市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_05",
+      "display_store": "C市云栖火锅店",
+      "display_enterprise": "C市云栖火锅运营主体",
+      "display_region": "C市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_06",
+      "display_store": "C市微澜茶饮店",
+      "display_enterprise": "C市微澜茶饮运营主体",
+      "display_region": "C市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_07",
+      "display_store": "D市晓棠咖啡店",
+      "display_enterprise": "D市晓棠咖啡运营主体",
+      "display_region": "D市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_08",
+      "display_store": "D市锦澜火锅店",
+      "display_enterprise": "D市锦澜火锅运营主体",
+      "display_region": "D市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_09",
+      "display_store": "E市南棠火锅店",
+      "display_enterprise": "E市南棠火锅运营主体",
+      "display_region": "E市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_10",
+      "display_store": "F市北辰西餐店",
+      "display_enterprise": "F市北辰西餐运营主体",
+      "display_region": "F市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_11",
+      "display_store": "G市晴川西餐店",
+      "display_enterprise": "G市晴川西餐运营主体",
+      "display_region": "G市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_12",
+      "display_store": "H市新序西餐店",
+      "display_enterprise": "H市新序西餐运营主体",
+      "display_region": "H市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_13",
+      "display_store": "I市禾里西餐店",
+      "display_enterprise": "I市禾里西餐运营主体",
+      "display_region": "I市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_14",
+      "display_store": "J市嘉木商超门店",
+      "display_enterprise": "J市嘉木商超运营主体",
+      "display_region": "J市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_15",
+      "display_store": "K市明庭西餐店",
+      "display_enterprise": "K市明庭西餐运营主体",
+      "display_region": "K市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_16",
+      "display_store": "L市川野中餐店",
+      "display_enterprise": "L市川野中餐运营主体",
+      "display_region": "L市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_17",
+      "display_store": "M市澄湾中餐店",
+      "display_enterprise": "M市澄湾中餐运营主体",
+      "display_region": "M市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_18",
+      "display_store": "N市安和中餐店",
+      "display_enterprise": "N市安和中餐运营主体",
+      "display_region": "N市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_19",
+      "display_store": "O市望舒中餐店",
+      "display_enterprise": "O市望舒中餐运营主体",
+      "display_region": "O市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_20",
+      "display_store": "P市启明中餐店",
+      "display_enterprise": "P市启明中餐运营主体",
+      "display_region": "P市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_21",
+      "display_store": "Q市清越咖啡店",
+      "display_enterprise": "Q市清越咖啡运营主体",
+      "display_region": "Q市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_22",
+      "display_store": "R市长乐咖啡店",
+      "display_enterprise": "R市长乐咖啡运营主体",
+      "display_region": "R市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_23",
+      "display_store": "S市松间咖啡店",
+      "display_enterprise": "S市松间咖啡运营主体",
+      "display_region": "S市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_24",
+      "display_store": "T市春浦茶饮店",
+      "display_enterprise": "T市春浦茶饮运营主体",
+      "display_region": "T市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_25",
+      "display_store": "U市竹里茶饮店",
+      "display_enterprise": "U市竹里茶饮运营主体",
+      "display_region": "U市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_26",
+      "display_store": "V市瑞庭茶饮店",
+      "display_enterprise": "V市瑞庭茶饮运营主体",
+      "display_region": "V市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_27",
+      "display_store": "W市兰亭商超门店",
+      "display_enterprise": "W市兰亭商超运营主体",
+      "display_region": "W市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_28",
+      "display_store": "X市远岚商超门店",
+      "display_enterprise": "X市远岚商超运营主体",
+      "display_region": "X市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_29",
+      "display_store": "Y市白鹭商超门店",
+      "display_enterprise": "Y市白鹭商超运营主体",
+      "display_region": "Y市",
+      "real_value_included": false
+    },
+    {
+      "store_alias": "anchor_store_public_30",
+      "display_store": "Z市枫林商超门店",
+      "display_enterprise": "Z市枫林商超运营主体",
+      "display_region": "Z市",
+      "real_value_included": false
+    }
+  ],
+  "note": "This public map intentionally excludes original enterprise, store, worker and internal ids."
+}

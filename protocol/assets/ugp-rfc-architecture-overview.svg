@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760">
+<style>text {Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; letter-spacing:0;}</style>
+<defs>
+<marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/></marker>
+<marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#059669"/></marker>
+<marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#ea580c"/></marker>
+<marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/></marker>
+<marker id="arrow-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/></marker>
+<marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/></marker>
+</defs>
+<rect width="1200" height="760" fill="#ffffff"/>
+<text x="600.0" y="46" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">UGP Architecture Overview</text>
+<text x="600.0" y="74" text-anchor="middle" font-size="14" font-weight="400" fill="#6b7280">Three agent roles operate through a shared protocol layer</text>
+<rect x="105" y="130" width="320" height="105" rx="14" ry="14" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.7"/>
+<text x="265" y="168" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">Enterprise Agent</text>
+<text x="265" y="197" text-anchor="middle" font-size="13" font-weight="500" fill="#4b5563">Demand, hiring, verification</text>
+<rect x="440" y="130" width="320" height="105" rx="14" ry="14" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.7"/>
+<text x="600" y="168" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">Worker Agent</text>
+<text x="600" y="197" text-anchor="middle" font-size="13" font-weight="500" fill="#4b5563">Intent, acceptance, work proof</text>
+<rect x="775" y="130" width="320" height="105" rx="14" ry="14" fill="#faf5ff" stroke="#ddd6fe" stroke-width="1.7"/>
+<text x="935" y="168" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">Platform Agent</text>
+<text x="935" y="197" text-anchor="middle" font-size="13" font-weight="500" fill="#4b5563">Matching, orchestration, settlement</text>
+<rect x="160" y="330" width="880" height="148" rx="18" ry="18" fill="#eff6ff" stroke="#93c5fd" stroke-width="2.2"/>
+<text x="600" y="368" text-anchor="middle" font-size="22" font-weight="700" fill="#1d4ed8">Universal Gig Protocol</text>
+<text x="600" y="400" text-anchor="middle" font-size="15" font-weight="600" fill="#1d4ed8">Object Model · Capability Registry · Policy Gate · State Machine · Audit Trace</text>
+<rect x="175" y="425" width="140" height="32" rx="8" ry="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.2"/>
+<text x="245" y="447" text-anchor="middle" font-size="13" font-weight="600" fill="#374151">Objects</text>
+<rect x="355" y="425" width="140" height="32" rx="8" ry="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.2"/>
+<text x="425" y="447" text-anchor="middle" font-size="13" font-weight="600" fill="#374151">Capabilities</text>
+<rect x="535" y="425" width="140" height="32" rx="8" ry="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.2"/>
+<text x="605" y="447" text-anchor="middle" font-size="13" font-weight="600" fill="#374151">Policy</text>
+<rect x="715" y="425" width="140" height="32" rx="8" ry="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.2"/>
+<text x="785" y="447" text-anchor="middle" font-size="13" font-weight="600" fill="#374151">State</text>
+<rect x="895" y="425" width="140" height="32" rx="8" ry="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.2"/>
+<text x="965" y="447" text-anchor="middle" font-size="13" font-weight="600" fill="#374151">Audit</text>
+<path d="M 265 235 L 265 330" fill="none" stroke="#ea580c" stroke-width="2" marker-end="url(#arrow-orange)"/>
+<path d="M 600 235 L 600 330" fill="none" stroke="#059669" stroke-width="2" marker-end="url(#arrow-green)"/>
+<path d="M 935 235 L 935 330" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<rect x="90" y="580" width="205" height="86" rx="12" ry="12" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.4"/>
+<text x="192.5" y="614" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">Enterprise Systems</text>
+<text x="192.5" y="642" text-anchor="middle" font-size="12" font-weight="500" fill="#6b7280">HCM · Scheduling · Payroll</text>
+<rect x="335" y="580" width="205" height="86" rx="12" ry="12" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.4"/>
+<text x="437.5" y="614" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">Worker Apps</text>
+<text x="437.5" y="642" text-anchor="middle" font-size="12" font-weight="500" fill="#6b7280">Profile · Wallet · Reminders</text>
+<rect x="580" y="580" width="205" height="86" rx="12" ry="12" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.4"/>
+<text x="682.5" y="614" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">Workforce Platform</text>
+<text x="682.5" y="642" text-anchor="middle" font-size="12" font-weight="500" fill="#6b7280">Jobs · Attendance · Settlement</text>
+<rect x="825" y="580" width="205" height="86" rx="12" ry="12" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.4"/>
+<text x="927.5" y="614" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">External Providers</text>
+<text x="927.5" y="642" text-anchor="middle" font-size="12" font-weight="500" fill="#6b7280">Credential · Payment · Compliance</text>
+<path d="M 600 478 L 600 530 L 192 530 L 192 580" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<path d="M 600 478 L 600 530 L 437 530 L 437 580" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<path d="M 600 478 L 600 530 L 682 530 L 682 580" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<path d="M 600 478 L 600 530 L 927 530 L 927 580" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+</svg>
