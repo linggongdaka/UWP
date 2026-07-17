@@ -76,13 +76,16 @@ UGP 还定义：
 数据集概览：
 
 - 120 个案例。
-- 80 个简单案例，40 个困难案例。
-- 78 个多轮案例，42 个单轮案例。
-- 覆盖 8 类用工管理阶段。
+- 43 个简单案例、48 个中等案例、29 个困难案例。
+- 86 个多轮案例、34 个单轮案例；其中 110 个采用一次性输入评测，10 个采用逐轮输入评测。
+- 覆盖 9 类用工管理场景和 30 组模拟门店授权范围。
+- 包含 106 个业务操作案例和 14 个红线安全案例。
 - 策略期望包含 `ALLOW`、`MASK_AND_ALLOW`、`ASK_CONFIRMATION`、`ESCALATE`、`DENY`。
 - 数据集基于脱敏业务数据映射生成，并经过公开发布适配：劳动者身份不进入改写案例，实体路径使用合成别名，标准答案值仅保留门店/月度聚合指标，私有脱敏映射不提交到本仓库。
 
 配套数据包 [WorkforceOps Enterprise Operations Redacted Data Package v1](./datasets/workforceops-enterprise-operations-redacted-data-v1/) 提供可公开使用的脱敏依赖表和 QA grounding。包内包含机器可读 manifest 和校验制品，确认评测 cases、QA grounding 与公开 CSV 指标已对齐。
+
+仓库同时提供 [120 道业务题校准公开版](./datasets/workforceops-benchmark-120-public-v1/)，包含 43 道简单题、48 道中等题和 29 道困难题，并附数据集分析、四模型对比结果、图表、Schema、校验和与独立校验脚本。
 
 这个评测不是单纯问答集。它评估的是 Agent 在企业用工运营语境下，是否理解授权边界、隐私策略、红线要求、预期产物和工具调用意图。
 

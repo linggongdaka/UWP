@@ -1,0 +1,270 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://workforceops.org/schemas/case.schema.json",
+  "title": "WorkforceOps Benchmark Case",
+  "type": "object",
+  "required": [
+    "case_id",
+    "track",
+    "stage",
+    "actor_role",
+    "conversation",
+    "initial_state",
+    "expected_state_transitions",
+    "expected_artifacts",
+    "policy_expectation",
+    "mandate_expectation",
+    "redlines"
+  ],
+  "properties": {
+    "case_id": { "type": "string" },
+    "track": { "type": "string", "enum": ["discovery", "b_operation", "fulfillment", "redline"] },
+    "stage": { "type": "string" },
+    "difficulty": { "type": "string", "enum": ["easy", "mid", "hard"] },
+    "turn_type": { "type": "string", "enum": ["single", "multi"] },
+    "evaluation_mode": { "type": "string", "enum": ["single", "incremental"] },
+    "benchmark_axis": {
+      "type": "object",
+      "properties": {
+        "scenario": { "type": "string" },
+        "capability": { "type": "string" },
+        "task_type": { "type": "string" },
+        "risk_type": { "type": "string" },
+        "metric_family": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "actor_role": { "type": "string" },
+    "auth_context": {
+      "type": "object",
+      "required": ["actor_ref", "actor_role", "tenant_ref", "scope"],
+      "properties": {
+        "actor_ref": { "type": "string" },
+        "actor_role": {
+          "type": "string",
+          "enum": [
+            "store_manager",
+            "site_supervisor",
+            "area_operator",
+            "finance_operator",
+            "operations_owner",
+            "customer_success",
+            "worker_agent",
+            "platform_integrator",
+            "system"
+          ]
+        },
+        "actor_role_label": { "type": "string" },
+        "tenant_ref": { "type": "string" },
+        "tenant_scope_label": { "type": "string" },
+        "scope": {
+          "type": "object",
+          "required": ["visibility"],
+          "properties": {
+            "visibility": {
+              "type": "string",
+              "enum": ["tenant", "enterprise", "store", "project", "shift", "own_worker", "out_of_scope"]
+            },
+            "enterprise_refs": { "type": "array", "items": { "type": "string" } },
+            "store_refs": { "type": "array", "items": { "type": "string" } },
+            "project_refs": { "type": "array", "items": { "type": "string" } },
+            "shift_refs": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "permissions": { "type": "array", "items": { "type": "string" } },
+        "data_permissions": {
+          "type": "object",
+          "properties": {
+            "scope_level": {
+              "type": "string",
+              "enum": ["tenant", "enterprise", "store", "project", "shift", "own_worker", "out_of_scope"]
+            },
+            "store_scope_policy": { "type": "string" },
+            "allowed_sensitive_fields": { "type": "array", "items": { "type": "string" } },
+            "masked_fields": { "type": "array", "items": { "type": "string" } },
+            "denied_fields": { "type": "array", "items": { "type": "string" } },
+            "out_of_scope_behavior": { "type": "string", "enum": ["deny", "escalate", "ask_clarification"] },
+            "permission_notes": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "mandate_refs": { "type": "array", "items": { "type": "string" } },
+        "current_subject": {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string", "enum": ["store", "enterprise", "project", "shift"] },
+            "entity_alias": { "type": "string" },
+            "display_name": { "type": "string" },
+            "public_name": { "type": "string" },
+            "scope_label": { "type": "string" }
+          }
+        },
+        "resolution_policy": {
+          "type": "object",
+          "properties": {
+            "implicit_store_phrases": { "type": "array", "items": { "type": "string" } },
+            "resolution": { "type": "string" },
+            "ask_clarification_when_ambiguous": { "type": "boolean" }
+          }
+        },
+        "expires_at": { "type": "string" }
+      }
+    },
+    "runtime_context": {
+      "type": "object",
+      "properties": {
+        "local_datetime": { "type": "string" },
+        "timezone": { "type": "string" },
+        "business_date": { "type": "string" },
+        "relative_time_resolution": {
+          "type": "object",
+          "properties": {
+            "今天": { "type": "string" },
+            "昨天": { "type": "string" },
+            "这两天": { "type": "string" },
+            "本周": { "type": "string" },
+            "这个月": { "type": "string" },
+            "上个月": { "type": "string" }
+          }
+        },
+        "reporting_period": {
+          "type": "object",
+          "properties": {
+            "requested_month": { "type": "string" },
+            "requested_month_phrase": { "type": "string" },
+            "period_label": { "type": "string" }
+          }
+        },
+        "business_calendar": {
+          "type": "object",
+          "properties": {
+            "weekday_zh": { "type": "string" },
+            "is_workday": { "type": "boolean" },
+            "period_note": { "type": "string" }
+          }
+        },
+        "weather_context": {
+          "type": "object",
+          "properties": {
+            "condition": { "type": "string" },
+            "temperature_c": { "type": "number" },
+            "alert_level": { "type": "string" },
+            "operational_hint": { "type": "string" }
+          }
+        },
+        "local_event_context": {
+          "type": "object",
+          "properties": {
+            "event": { "type": "string" },
+            "operational_hint": { "type": "string" }
+          }
+        },
+        "channel": { "type": "string" }
+      }
+    },
+    "conversation": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "initial_state": { "type": "object" },
+    "expected_state_transitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to"],
+        "properties": {
+          "from": { "type": "string" },
+          "to": { "type": "string" }
+        }
+      }
+    },
+    "expected_capabilities": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^org\\.workforceops\\." }
+    },
+    "expected_tool_args": { "type": "object" },
+    "expected_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["artifact_type"],
+        "properties": {
+          "artifact_type": {
+            "type": "string",
+            "enum": [
+              "fit_report",
+              "interview_packet",
+              "entry_confirmation",
+              "schedule_gap_report",
+              "roster_snapshot",
+              "certificate_status_report",
+              "attendance_claim",
+              "business_verification",
+              "workhour_confirmation",
+              "compensation_diagnosis",
+              "operation_confirmation",
+              "bill_invoice_status",
+              "claim_evidence_packet"
+            ]
+          },
+          "payload_required_keys": { "type": "array", "items": { "type": "string" } },
+          "evidence_required": { "type": "boolean" }
+        }
+      }
+    },
+    "policy_expectation": {
+      "type": "object",
+      "required": ["decision", "requested_fields", "requested_action"],
+      "properties": {
+        "decision": {
+          "type": "string",
+          "enum": ["ALLOW", "MASK_AND_ALLOW", "ASK_CONFIRMATION", "ESCALATE", "DENY"]
+        },
+        "requested_fields": { "type": "array", "items": { "type": "string" } },
+        "requested_action": { "type": "string" },
+        "access_scope": {
+          "type": "string",
+          "enum": ["scope_visible", "out_of_scope", "cross_tenant", "cross_store_without_scope", "cross_project_without_scope"]
+        },
+        "denied_fields": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "mandate_expectation": {
+      "type": "object",
+      "required": ["required"],
+      "properties": {
+        "required": { "type": "boolean" },
+        "mandate_type": {
+          "type": "string",
+          "enum": [
+            "demand_mandate",
+            "entry_mandate",
+            "attendance_mandate",
+            "business_verification_mandate",
+            "compensation_mandate",
+            "bill_mandate",
+            "claim_mandate"
+          ]
+        }
+      }
+    },
+    "redlines": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "full_mobile_leak",
+          "id_card_leak",
+          "bank_account_leak",
+          "certificate_photo_leak",
+          "raw_salary_breakdown_leak",
+          "candidate_identity_leak",
+          "candidate_original_answer_leak",
+          "candidate_media_leak",
+          "candidate_reject_without_human_review",
+          "internal_worker_id_leak",
+          "out_of_scope_access",
+          "high_risk_action_without_confirmation",
+          "direct_compensation_commit_without_escalation",
+          "legal_answer_without_escalation",
+          "fabricated_fact"
+        ]
+      }
+    }
+  }
+}

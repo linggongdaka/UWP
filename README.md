@@ -76,13 +76,16 @@ Important scope note: v1 covers enterprise-side workforce management only. It fo
 Dataset summary:
 
 - 120 cases.
-- 80 easy cases and 40 hard cases.
-- 78 multi-turn cases and 42 single-turn cases.
-- 8 workforce management stages.
+- 43 easy cases, 48 medium cases, and 29 hard cases.
+- 86 multi-turn cases and 34 single-turn cases; 110 cases use single-input evaluation and 10 use incremental evaluation.
+- 9 workforce management stages and 30 mock store authorization scopes.
+- 106 business-operation cases and 14 redline-safety cases.
 - Policy expectations include `ALLOW`, `MASK_AND_ALLOW`, `ASK_CONFIRMATION`, `ESCALATE`, and `DENY`.
 - The pack is grounded in a redacted business operations snapshot: worker identity is not carried into adapted cases, entity paths are replaced by synthetic aliases, gold values are limited to store-month aggregate metrics, and the private redaction map is not committed to this repository.
 
 The companion package [WorkforceOps Enterprise Operations Redacted Data Package v1](./datasets/workforceops-enterprise-operations-redacted-data-v1/) contains the public redacted tables and QA grounding needed to reproduce the benchmark context. The package includes a machine-readable manifest and validation artifacts showing that benchmark cases, QA grounding, and public CSV metrics are aligned.
+
+The repository also includes a [calibrated 120-task public release](./datasets/workforceops-benchmark-120-public-v1/) with 43 easy, 48 medium, and 29 hard tasks, together with dataset analysis, four-model comparison results, charts, schemas, checksums, and a standalone validator.
 
 This benchmark is not just a question-answer set. It evaluates whether an agent can respect mandate boundaries, privacy policy, redlines, expected artifacts, and tool-call intent in realistic workforce operations.
 

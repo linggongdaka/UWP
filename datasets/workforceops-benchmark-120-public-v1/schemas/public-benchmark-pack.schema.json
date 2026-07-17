@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://workforceops.org/schemas/public-benchmark-pack.schema.json",
+  "title": "WorkforceOps Public Benchmark Pack",
+  "type": "object",
+  "required": [
+    "pack_id",
+    "release",
+    "data_policy",
+    "summary",
+    "cases"
+  ],
+  "properties": {
+    "pack_id": {
+      "type": "string"
+    },
+    "release": {
+      "type": "object"
+    },
+    "data_policy": {
+      "type": "object"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 120,
+      "maxItems": 120,
+      "items": {
+        "$ref": "case.schema.json"
+      }
+    }
+  }
+}

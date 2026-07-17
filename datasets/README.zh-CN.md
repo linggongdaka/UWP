@@ -12,6 +12,9 @@
 - [WorkforceOps Enterprise Operations Redacted Data Package v1](./workforceops-enterprise-operations-redacted-data-v1/)
   Benchmark 的公开脱敏配套数据包，包含脱敏依赖表、QA grounding、120 case benchmark 包、manifest 和校验制品。
 
+- [WorkforceOps Benchmark 120 校准公开版](./workforceops-benchmark-120-public-v1/)
+  包含 43 道简单题、48 道中等题和 29 道困难题，提供完整公开 JSON 题包、Schema、数据集卡片、隐私说明、分布分析、四模型对比结果、图表、校验和与独立校验脚本。
+
 ## 范围
 
 第一版刻意收窄范围，只覆盖企业侧和平台侧用工管理运营链路：人员花名册、需求排班、考勤工时、薪资费用、培训证件、争议合规、账单开票、评价奖惩。
