@@ -4,6 +4,7 @@
   "license_status": "MIT",
   "source_pack_sha256": "c212e71b6adcc83f68443fa47ee91cffe291d94541fae76f86643f76bc9bcc31",
   "public_pack_file": "data/workforceops_benchmark_120_public_v1.json",
+  "public_store_scope_count": 30,
   "removed_internal_fields": [
     "source_tables",
     "snapshot_sql_ref",
@@ -17,6 +18,7 @@
   "difficulty_labels_preserved": true,
   "public_redactions": [
     "store display names remapped to numbered mock stores",
+    "one repeated source-store task assigned an independent public mock-store scope",
     "worker aliases remapped to numbered mock workers",
     "brand names generalized",
     "health-certificate references generalized to entry documents"

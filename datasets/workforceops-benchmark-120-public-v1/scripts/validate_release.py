@@ -101,6 +101,18 @@ def validate_dataset(dataset_path: Path) -> list[str]:
             errors.append(f"{case.get('case_id', index)} conversation must be non-empty")
 
     expected_summary = data.get("summary", {})
+    store_refs = {
+        store_ref
+        for case in cases
+        for store_ref in case.get("auth_context", {}).get("scope", {}).get("store_refs", [])
+    }
+    if expected_summary.get("store_scope_count") != len(store_refs):
+        errors.append(
+            "summary.store_scope_count mismatch: "
+            f"expected {expected_summary.get('store_scope_count')}, actual {len(store_refs)}"
+        )
+    if len(store_refs) != 30:
+        errors.append(f"expected 30 public store scopes, got {len(store_refs)}")
     checks = {
         "by_difficulty": Counter(case.get("difficulty") for case in cases),
         "by_stage": Counter(case.get("stage") for case in cases),
@@ -166,6 +178,7 @@ def main() -> int:
                 "ok": True,
                 "pack_id": data["pack_id"],
                 "case_count": len(data["cases"]),
+                "store_scope_count": data["summary"]["store_scope_count"],
                 "by_difficulty": data["summary"]["by_difficulty"],
             },
             ensure_ascii=False,

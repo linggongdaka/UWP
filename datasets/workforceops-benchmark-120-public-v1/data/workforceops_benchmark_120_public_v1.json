@@ -92,7 +92,8 @@
       "3": 52,
       "4": 8,
       "5": 3
-    }
+    },
+    "store_scope_count": 30
   },
   "cases": [
     {
@@ -7213,7 +7214,7 @@
         "scope": {
           "visibility": "store",
           "store_refs": [
-            "anchor_store_04_01"
+            "anchor_store_public_30"
           ]
         },
         "permissions": [
@@ -7222,8 +7223,8 @@
         ],
         "current_subject": {
           "type": "store",
-          "entity_alias": "anchor_store_04_01",
-          "display_name": "模拟门店25",
+          "entity_alias": "anchor_store_public_30",
+          "display_name": "模拟门店30",
           "public_name": "本店",
           "scope_label": "当前登录人绑定的门店"
         },
@@ -7333,7 +7334,7 @@
         "__common__": {
           "qa_id": "qa_demand_and_schedule_008",
           "target_month": "2025-06",
-          "entity_alias": "anchor_store_04_01"
+          "entity_alias": "anchor_store_public_30"
         }
       },
       "metadata": {
@@ -7350,7 +7351,7 @@
           "domain": "需求与排班",
           "dimension": "store",
           "industry": "中餐",
-          "entity_alias": "anchor_store_04_01",
+          "entity_alias": "anchor_store_public_30",
           "question_redacted": "门店级：历史取消班次可能影响月结时的排班、账单和赔付规则提示。",
           "gold_metrics": [
             {
@@ -7420,7 +7421,7 @@
             "domain": "需求与排班",
             "dimension": "store",
             "industry": "中餐",
-            "entity_alias": "anchor_store_04_01",
+            "entity_alias": "anchor_store_public_30",
             "question_redacted": "门店级：历史取消班次可能影响月结时的排班、账单和赔付规则提示。",
             "gold_metrics": [
               {
@@ -7474,7 +7475,7 @@
             "domain": "需求与排班",
             "dimension": "store",
             "industry": "中餐",
-            "entity_alias": "anchor_store_04_01",
+            "entity_alias": "anchor_store_public_30",
             "question_redacted": "门店级：历史取消班次可能影响月结时的排班、账单和赔付规则提示。",
             "gold_metrics": [
               {
@@ -7529,7 +7530,7 @@
             "domain": "需求与排班",
             "dimension": "store",
             "industry": "中餐",
-            "entity_alias": "anchor_store_04_01",
+            "entity_alias": "anchor_store_public_30",
             "question_redacted": "门店级：历史取消班次可能影响月结时的排班、账单和赔付规则提示。",
             "gold_metrics": [
               {
